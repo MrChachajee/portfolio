@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 18px;
+}
+#noscript {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 10px; 
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 4rem;
+    margin: auto;
+}
+
+.header {
+  position: fixed;
+  z-index: 1;  
+  width: 100%;  
+  background-color: transparent;
+}
+/* The progress container (grey background) */
+.progress-container-top {
+  width: 100%;
+  height: 8px;
+}
+.progress-bar-top {
+  height: 8px; 
+  background: crimson !important;
+  width: 0%;
+}
+ 
+
+
+
+/* ---------------------NAV-------------------- */
+
+.nav-link {
+  color: white !important;
+  font-size: 1.125rem !important;
+}
+
+.nav-link:hover {
+  color: crimson !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-brand {
+  color: white;
+  font-size: 1.5626rem !important;
+  font-weight: 500;
+}
+
+.navbar-brand span {
+  color: crimson;
+}
+
+/* ---------------------NAV-------------------- */
+
+
+
+
+
+
+/* ---------------------HOME---------------------- */
+
+.main .img {
+  height: 100vh;
+  background: url('../images/banner.jpg') no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.home {
+  position: absolute;
+  top: 30%;
+  font-family: 'Ubuntu' sans-serif;
+  color: #ffffff;
+  line-height: 3.75rem;
+}
+
+.home .text #text1 {
+  font-size: 1.6875rem;
+}
+
+.home .text #text2 {
+  font-size: 4.6875rem; 
+}
+
+.home .text #text3 {
+  font-size: 2.5rem;
+  display: inline;
+  margin-right: 1.25rem;
+}
+
+.home .text span{
+  font-size: 2.5rem;
+  color: crimson;
+}
+
+.home .button {
+  margin: 25px 0;
+}
+
+.home .button a{
+  font-size: 1.5625rem;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  background-color: crimson;
+  padding: 12px 36px;
+  margin: 20px 0px 0px;
+  border: 3px solid crimson;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+.home .button a:hover{
+  background-color: transparent;
+  color: crimson;
+}
+
+/* ---------------------HOME---------------------- */
+
+
+
+
+
+/* ---------------------ABOUT---------------------- */
+
+.about {
+  font-family: 'Popins', sans-serif;
+  padding-bottom: 50px;
+}
+
+.about .title {
+  text-align: center;
+  margin: 60px 0;
+  padding-bottom: 20px;
+}
+
+.about .title::after {
+  content: 'Who Am I'
+}
+
+.about .title::after {
+  font-size: 1.25rem;
+  color: crimson;
+}
+
+.about .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about .content .left-col img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about .content .right-col {
+  width: 45%;
+  font-size: 0.9rem;
+}
+
+.about .content .right-col .about-typing {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.about .content .right-col p {
+  display: inline;
+  margin-right: 0.9rem;
+}
+
+.about .content .right-col span {
+  color: crimson;
+}
+
+#about-text {
+  font-weight: ;
+}
+
+/* ---------------------ABOUT---------------------- */
+
+
+
+
+
+/* ---------------------SERVICES---------------------- */
+
+
+.services {
+  background: black;
+  color: white;
+  padding: 100px 0;
+  font-family: 'Popins', sans-serif;
+}
+
+.services .content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.services .title {
+  text-align: center;
+  padding: 0px 0 20px 0;
+}
+
+.services .title::after {
+  content: 'What I Provide'
+}
+
+.services .title::after {
+  font-size: 1.25rem;
+  color: crimson;
+}
+
+.services .content .card {
+  padding: 20px 25px;
+  margin: 20px 0;
+  font-family: 'Popins', sans-serif;
+  background-color: #222222;
+  width: calc(33% - 20px);
+  border-radius: 6px;
+  text-align: center;
+  cursor: pointer;
+  min-width: 250px;
+  transition: all 0.3s ease;
+}
+
+.card .box {
+  transition: all 0.3s ease;
+}
+
+.services .content .card:hover {
+  background-color: crimson;
+}
+
+.services .content .card .icon-service {
+  font-size: 50px;
+  color: crimson;
+  transition: all 0.3s ease;
+}
+
+.services .content .card:hover .icon-service {
+  color: white;
+}
+
+
+.services .content .card:hover .box{
+    transform: scale(1.05);
+}
+
+.services .content .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.services .content .card p {
+  font-weight: 100;
+  font-size: 18px;
+}
+
+
+/* ---------------------SERVICES---------------------- *
+
+
+
+
+/* ---------------------SKILLS---------------------- */
+
+.skills {
+  font-family: 'Popins', sans-serif;
+  padding: 100px 3rem;
+} 
+
+.skills .title {
+  text-align: center;
+  margin: 60px 0; 
+  padding-bottom: 20px;
+}
+
+.skills .title::after {
+  content: 'What I Know'
+}
+
+.skills .title::after {
+  font-size: 1.25rem;
+  color: crimson;
+}
+
+.skills .content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.skills .content .left, 
+.skills .content .right {
+  width: 47%; 
+}
+
+.skills .content .bars {
+  margin-bottom: 15px;
+}
+
+.skills .content .bars .info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+} 
+
+.skills .content .bars .line {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: lightgrey;   
+}
+
+.skills .content .bars .line::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: crimson;
+  height: 5px;
+}
+
+
+.skills .languages,
+.skills .library {
+  margin-bottom: 10%;
+}
+
+.skills .languages h2,
+.skills .library h2,
+.skills .database h2{
+  margin-bottom: 1.5rem;
+  font-family: 'Popins', sans-serif;
+} 
+ 
+.skills .content .bars .html::before {
+  width: 90%;
+}
+
+.skills .content .bars .css::before {
+  width: 70%;
+}
+
+.skills .content .bars .js::before {
+  width: 60%;
+}
+
+.skills .content .bars .py::before {
+  width: 70%;
+}
+
+.skills .content .bars .php::before {
+  width: 40%;
+}
+
+.skills .content .bars .react::before {
+  width: 80%;
+}
+
+.skills .content .bars .django::before {
+  width: 70%;
+}
+
+.skills .content .bars .node::before {
+  width: 60%;
+}
+
+.skills .content .bars .jquery::before {
+  width: 70%;
+}
+
+.skills .content .bars .express::before {
+  width: 60%;
+}
+
+.skills .content .bars .bootstrap::before {
+  width: 40%;
+}
+
+.skills .content .bars .sql::before {
+  width: 60%;
+}
+
+.skills .content .bars .mongo::before {
+  width: 50%;
+}
+
+
+/* ---------------------SKILLS---------------------- *
+
+
+
+
+/* ---------------------MEDIA QURIES---------------------- */
+
+
+@media screen and (max-width: 1000px){
+  html {
+    font-size: 16px;
+  }
+  
+  .about .content .left-col {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  
+  .about .content {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about .content .right-col {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+  
+  .about .content .right-col .about-typing {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 750px){
+  html {
+    font-size: 14px;
+  }
+  
+  .skills .content {
+    flex-direction: column;
+  }
+  
+  .skills .content .left, 
+  .skills .content .right {
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 450px){
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  html {
+    font-size: 10px;
+  }
+  
+  .about .content .left-col img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 280px){
+  html {
+    font-size: 8px;
+  }
+}
+
+/* ---------------------MEDIA QURIES---------------------- */
