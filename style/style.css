@@ -271,7 +271,7 @@ html{
   transition: all 0.3s ease;
 }
 
-.services .content .card:hover .icon-service {
+.services .content .card:hover .icon-service { 
   color: white;
 }
 
