@@ -31,6 +31,9 @@ html{
     background: #555;
 }
 
+.mbm {
+  margin-bottom: 30px !important;
+}
 
 .max-width {
     max-width: 1300px;
@@ -421,7 +424,34 @@ html{
 }
 
 
-/* ---------------------SKILLS---------------------- *
+/* ---------------------SKILLS---------------------- */
+
+
+
+
+/* ---------------------CONTACT---------------------- */
+
+.contact {
+  font-family: 'Popins', sans-serif;
+  padding: 100px 2rem;
+  background: black;
+  color: white;
+}  
+
+.contact .title {
+  text-align: center;
+  margin: 60px 0; 
+  padding-bottom: 20px; 
+}
+
+.contact .title::after {
+  content: 'Get In Touch'
+}
+
+.contact .title::after {
+  font-size: 1.25rem;
+  color: crimson;
+}
 
 
 
