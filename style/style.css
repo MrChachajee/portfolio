@@ -98,7 +98,7 @@ html{
 
 .main .img {
   height: 100vh;
-  background: url('../images/banner.jpg') no-repeat center;
+  background: url('../images/me.jpg') no-repeat center;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -189,6 +189,7 @@ html{
   width: 400px;
   height: 400px;
   object-fit: cover;
+  object-position: top;
   border-radius: 6px;
 }
 
@@ -212,10 +213,24 @@ html{
 }
 
 #about-text {
-  font-weight: ;
+  font-weight: 400;
 }
 
 /* ---------------------ABOUT---------------------- */
+
+
+
+
+
+/* ---------------------PROJECTS---------------------- */
+
+
+.projects ul li a {
+  color: black;
+}
+
+
+/* ---------------------PROJECTS---------------------- */
 
 
 
@@ -228,6 +243,7 @@ html{
   background: black;
   color: white;
   padding: 100px 0;
+  /* height: 100vh; */
   font-family: 'Popins', sans-serif;
 }
 
@@ -393,6 +409,14 @@ html{
 
 .skills .content .bars .php::before {
   width: 40%;
+}
+
+.skills .content .bars .wordpress::before {
+  width: 90%;
+}
+
+.skills .content .bars .shopify::before {
+  width: 80%;
 }
 
 .skills .content .bars .react::before {
